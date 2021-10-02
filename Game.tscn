@@ -1,17 +1,15 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Kitty.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Mouse.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Game.gd" type="Script" id=3]
 
 [node name="Game" type="Node2D"]
 script = ExtResource( 3 )
 
 [node name="Kitty" parent="." instance=ExtResource( 1 )]
+position = Vector2( 64, 64 )
 scale = Vector2( 8, 8 )
 
 [node name="Mice" type="Node" parent="."]
 
-[node name="Mouse" parent="Mice" instance=ExtResource( 2 )]
-position = Vector2( 128, 0 )
-gender = "m"
+[node name="Timer" type="Timer" parent="."]
