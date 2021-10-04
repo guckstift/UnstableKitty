@@ -5,7 +5,7 @@
 [ext_resource path="res://Game.gd" type="Script" id=3]
 [ext_resource path="res://bg.png" type="Texture" id=4]
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=1]
 size = 20
 outline_size = 1
 outline_color = Color( 0.247059, 0.0431373, 0.74902, 1 )
@@ -18,7 +18,7 @@ outline_color = Color( 0.0431373, 0.156863, 0.0745098, 1 )
 use_filter = true
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=3]
 size = 69
 font_data = ExtResource( 2 )
 
@@ -83,7 +83,7 @@ margin_left = 262.0
 margin_top = 13.0
 margin_right = 840.0
 margin_bottom = 48.0
-custom_fonts/normal_font = SubResource( 3 )
+custom_fonts/normal_font = SubResource( 1 )
 bbcode_enabled = true
 bbcode_text = "[wave] [color=#39f]Hello World ![/color][/wave] Place some kitties and mice into the world!"
 text = " Hello World ! Place some kitties and mice into the world!"
@@ -137,7 +137,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/normal_font = SubResource( 4 )
+custom_fonts/normal_font = SubResource( 3 )
 bbcode_enabled = true
 bbcode_text = "[center][wave][color=#0f0]Test successful"
 text = "Test successful"

@@ -125,9 +125,10 @@ func start_test_phase():
 
 func update_info_label():
 	if phase == "warmup":
-		var text := "Warm-Up phase has begun! End in: "
+		var text := "Setup phase ends in: "
 		text += str(int(clock)) + " seconds"
 		$CanvasLayer/InfoLabel.text = text
+		$CanvasLayer/InfoLabel.margin_top = 56
 	elif phase == "test":
 		var text := "Test phase ends in: "
 		var secs = int(clock) % 60
@@ -137,6 +138,7 @@ func update_info_label():
 		if secs > 0:
 			text += str(secs) + " seconds"
 		$CanvasLayer/InfoLabel.text = text
+		$CanvasLayer/InfoLabel.margin_top = 720
 	elif phase == "over":
 		$CanvasLayer/InfoLabel.text = "Game Over!"
 		$CanvasLayer/InfoLabel.modulate = Color.lightcoral
