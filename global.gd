@@ -1,6 +1,9 @@
 extends Node
 
-const BOUNDS := Vector2(800, 600)
+const BOUNDS := Vector2(1024, 768)
+const MAX_MICE := 150
+const WARM_UP := 10
+const TEST_PHASE := 60 * 2
 
 func rand_pos(own_bounds = Vector2()):
 	return Vector2(
